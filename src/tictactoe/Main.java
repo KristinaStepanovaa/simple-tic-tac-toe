@@ -13,7 +13,7 @@ public class Main {
 
         char ch = X;
         while (true) {
-            fieldState = changeFieldX(fieldState, ch);
+            fieldState = changeField(fieldState, ch);
             drawField(fieldState);
 
             String gameState = gameState(fieldState);
@@ -30,7 +30,7 @@ public class Main {
         }
     }
 
-    public static char[] changeFieldX(char[] arr, char elem) {
+    public static char[] changeField(char[] arr, char elem) {
         Scanner scanner = new Scanner(System.in);
 
         int index1 = 0;
